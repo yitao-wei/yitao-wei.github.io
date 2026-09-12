@@ -82,6 +82,13 @@ h1 {
   letter-spacing: -0.04em;
 }
 
+.cn-name {
+  margin-left: 0.35em;
+  color: var(--muted);
+  font-weight: 550;
+  letter-spacing: 0.08em;
+}
+
 .section {
   display: grid;
   grid-template-columns: 150px minmax(0, 1fr);
