@@ -34,7 +34,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 28px;
+  gap: 18px;
   padding-bottom: 48px;
   border-bottom: 1px solid var(--border);
 }
@@ -46,14 +46,14 @@ body {
 }
 
 .portrait {
-  width: 132px;
+  width: 72px;
   aspect-ratio: 3 / 4;
   flex-shrink: 0;
   object-fit: cover;
   object-position: center 28%;
   border: 1px solid var(--border);
-  border-radius: 16px;
-  box-shadow: 0 10px 28px rgba(60, 78, 104, 0.08);
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(60, 78, 104, 0.06);
 }
 
 .header-links {
@@ -277,8 +277,8 @@ footer {
   }
 
   .portrait {
-    width: 96px;
-    border-radius: 12px;
+    width: 56px;
+    border-radius: 8px;
   }
 
   .section {
