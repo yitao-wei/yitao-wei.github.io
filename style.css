@@ -19,7 +19,7 @@ body {
   margin: 0;
   color: var(--text);
   background: var(--background);
-  font-family: Inter, "SF Pro Text", "Segoe UI", Arial, sans-serif;
+  font-family: Inter, "SF Pro Text", "Segoe UI", "PingFang SC", "Microsoft YaHei", Arial, sans-serif;
   line-height: 1.6;
 }
 
@@ -52,10 +52,37 @@ body {
 
 .header-copy {
   display: grid;
-  gap: 3px;
+  gap: 6px;
 }
 
-.header-copy a {
+.header-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 0;
+}
+
+.header-links a + a {
+  position: relative;
+  margin-left: 16px;
+  padding-left: 16px;
+}
+
+.header-links a + a::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 1px;
+  height: 12px;
+  content: "";
+  background: var(--border);
+  transform: translateY(-50%);
+}
+
+.header-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
   width: fit-content;
   color: var(--muted);
   font-size: 0.9rem;
@@ -63,9 +90,15 @@ body {
   transition: color 160ms ease;
 }
 
-.header-copy a:hover,
-.header-copy a:focus-visible {
+.header-links a:hover,
+.header-links a:focus-visible {
   color: var(--accent);
+}
+
+.github-icon {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
 }
 
 h1,
@@ -82,8 +115,14 @@ h1 {
   letter-spacing: -0.04em;
 }
 
+.name-sep {
+  margin: 0 0.22em;
+  color: #c3cad4;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
 .cn-name {
-  margin-left: 0.35em;
   color: var(--muted);
   font-weight: 550;
   letter-spacing: 0.08em;
