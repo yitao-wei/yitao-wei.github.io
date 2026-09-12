@@ -46,14 +46,14 @@ body {
 }
 
 .portrait {
-  width: 72px;
+  width: 48px;
   aspect-ratio: 3 / 4;
   flex-shrink: 0;
   object-fit: cover;
   object-position: center 28%;
   border: 1px solid var(--border);
-  border-radius: 10px;
-  box-shadow: 0 6px 16px rgba(60, 78, 104, 0.06);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(60, 78, 104, 0.06);
 }
 
 .header-links {
@@ -277,8 +277,8 @@ footer {
   }
 
   .portrait {
-    width: 56px;
-    border-radius: 8px;
+    width: 40px;
+    border-radius: 6px;
   }
 
   .section {
