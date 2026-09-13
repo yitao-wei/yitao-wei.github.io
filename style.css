@@ -47,8 +47,9 @@ body {
 
 .portrait {
   width: 48px;
-  aspect-ratio: 3 / 4;
+  height: 64px;
   flex-shrink: 0;
+  align-self: center;
   object-fit: cover;
   object-position: center 28%;
   border: 1px solid var(--border);
@@ -278,6 +279,7 @@ footer {
 
   .portrait {
     width: 40px;
+    height: 53px;
     border-radius: 6px;
   }
 
